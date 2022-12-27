@@ -1,29 +1,38 @@
 {
-  "name": "authentication-with-react-context",
+  "name": "raccoon-backend",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "dependencies": {
-    "history": "4.10.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-router-dom": "5.1.2",
-    "react-scripts": "3.4.1"
-  },
-  "devDependencies": {
-    "typescript": "3.3.3"
-  },
+  "main": "dist/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon",
+    "eslint": "eslint src --ext .ts"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^16.11.66",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "prettier": "2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.4",
+    "@types/cookie-parser": "^1.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
 }
